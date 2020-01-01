@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -373,6 +376,7 @@
                             <div class="container">
                                 <h2>V2 TOURS </h2>
                                 <h1>MANGALORE</h1>
+                                <h3><?php  echo $_SESSION['username']; ?></h3>
                                 <a href="#" class="btn btn-default">View More</a>
                             </div><!-- end container -->  
                         </div><!-- end meta -->
