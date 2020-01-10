@@ -4,20 +4,15 @@ session_start();
 // If form submitted, insert values into the database.
 if (isset($_POST['submit'])){
         // removes backslashes
- $username = stripslashes($_REQUEST['username']);
-        //escapes special characters in a string
- $username = mysqli_real_escape_string($con,$username);
- $password = stripslashes($_REQUEST['password']);
- $password = mysqli_real_escape_string($con,$password);
- //Checking is user existing in the database or not
-        $query = "SELECT * FROM `users` WHERE username='$username'
-and password='".md5($password)."'";
- $result = mysqli_query($con,$query) or die(mysql_error());
- $rows = mysqli_num_rows($result);
-        if($rows==1){
-     $_SESSION['username'] = $username;
-            // Redirect user to index.php
-     header("Location: index.php");
+ $uname = $_POST['uname'];
+ $pwd=$_POST['pwd'];
+ $query="SELECT* FROM user WHERE uname='$uname'
+ and pwd='$pwd'";
+ $result=mysqli_query($con,$query);
+ $rows=mysqli_num_rows($result);
+ if($rows>=1){
+     $_SESSION['uname']=$uname;
+     echo "<scrpit> window.location= 'index.php'; </script>";
          }else{
  echo "<div class='form'>
 <h3>Username/password is incorrect.</h3>
@@ -423,7 +418,7 @@ and password='".md5($password)."'";
                                     </form>
                                     
                                     <div class="other-links">
-                                    	<p class="link-line">New Here ? <a href="#">Signup</a></p>
+                                    	<p class="link-line">New Here ? <a href="registration.php">Signup</a></p>
                                         <a class="simple-link" href="#">Forgot Password ?</a>
                                     </div><!-- end other-links -->
                                 </div><!-- end custom-form -->

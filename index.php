@@ -1,6 +1,8 @@
 <?php
-session_start();
+//session_start();
+include("auth.php");
 ?>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -69,7 +71,7 @@ session_start();
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div id="info">
                             <ul class="list-unstyled list-inline">
-                                <li><span><i class="fa fa-map-marker"></i></span>Kulai Mangalore</li>
+                                <li><span><i class="fa fa-map-marker"></i></span>Kulai Mangalore </li>
                                 <li><span><i class="fa fa-phone"></i></span>91+9535649099</li>
                             </ul>
                         </div><!-- end info -->
@@ -125,7 +127,7 @@ session_start();
                     <div class="header-search hidden-lg">
                     	<a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
                     </div>
-                    <a href="#" class="navbar-brand"><span><i class="fa fa-plane"></i>STAR</span>TRAVELS</a>
+                    <a href="#" class="navbar-brand"><span><i class="fa fa-plane"></i>V2</span>TRAVELS</a>
                 </div><!-- end navbar-header -->
                 
                 <div class="collapse navbar-collapse" id="myNavbar1">
@@ -387,8 +389,8 @@ session_start();
 	height:100%;">
                         <div class=" meta">         
                             <div class="container">
-                                <h2>Discover</h2>
-                                <h1>Australia</h1>
+                                <h2>v2</h2>
+                                <h1>MANGALORE</h1>
                                 <a href="#" class="btn btn-default">View More</a>
                             </div><!-- end container -->  
                         </div><!-- end meta -->
@@ -1930,7 +1932,7 @@ session_start();
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
-                            <p>© 2017 <a href="#">StarTravel</a>. All rights reserved.</p>
+                            <p>© 2017 <a href="#">V2 Travel</a>. All rights reserved.</p>
                         </div><!-- end columns -->
                         
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
