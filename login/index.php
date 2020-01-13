@@ -1,5 +1,5 @@
 <?php
-require('db.php');
+require('../access/db.php');
 session_start();
 // If form submitted, insert values into the database.
 if (isset($_POST['submit'])){
@@ -32,13 +32,15 @@ if (isset($_POST['submit'])){
 <html lang="en">
     <head>
         <base href="../">
-        <?php include('pages/csslink.php'); ?>
+        <?php include('../pages/csslink.php'); ?>
     </head>
     
     
     <body>
-    <?php include('pages/header.php'); ?>
+    <?php include('../pages/header.php'); ?>
    <!-- end sidenav-content -->
+        
+        
         <!--============= PAGE-COVER =============-->
         <section class="page-cover" id="cover-login">
             <div class="container">
@@ -165,12 +167,12 @@ if (isset($_POST['submit'])){
         
         
         <!--======================= FOOTER =======================-->
-        <?php include('pages/footer.php'); ?>
+        <?php include('../pages/footer.php'); ?>
         <!-- end footer -->
         
         
         <!-- Page Scripts Starts -->
-        <?php include('pages/jslink.php'); ?>
+        <?php include('../pages/jslink.php'); ?>
         <!-- Page Scripts Ends -->
     </body>
 </html>

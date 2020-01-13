@@ -378,7 +378,7 @@ include("auth.php");
                             <div class="container">
                                 <h2>V2 TOURS </h2>
                                 <h1>MANGALORE</h1>
-                                <h3><?php  echo $_SESSION['username']; ?></h3>
+                                <h3><?php  echo $_SESSION['uname']; ?></h3>
                                 <a href="#" class="btn btn-default">View More</a>
                             </div><!-- end container -->  
                         </div><!-- end meta -->
