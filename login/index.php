@@ -3,26 +3,28 @@ require('../access/db.php');
 session_start();
 // If form submitted, insert values into the database.
 if (isset($_POST['submit'])){
- $uname = $_POST['username'];
- $pwd=$_POST['password'];
+ $uname = $_POST['uname'];
+ $pwd=$_POST['pwd'];
  $query="SELECT * FROM user WHERE uname='$uname'AND pwd='$pwd'";
  $result=mysqli_query($con,$query);
  $rows=mysqli_num_rows($result);
  if($rows>=1){
      $_SESSION['uname']=$uname;
-     echo "<script> window.location= 'index.php'; </script>";
+     echo "<script> window.location= '../index.php'; </script>";
          }else{
         $query2="SELECT * FROM `admin` WHERE auname='$uname'AND apwd='$pwd'";
         $result2=mysqli_query($con,$query2);
+        $getinfo=mysqli_fetch_assoc($result2);
         $rows2=mysqli_num_rows($result2);
         if($rows2>=1){
-                $_SESSION['auname']=$uname;
-                //echo "<scrpit> window.location= 'index.php'; </script>";
-                echo "<script>window.alert('you are logged in as admin');</script>";
+                $_SESSION['auname']=$getinfo['auname'];
+                $_SESSION['aid']=$getinfo['aid'];
+                echo "<scrpit> window.location= '../admin/index.php'; </script>";
+                //echo "<script>window.alert('you are logged in as admin');</script>";
         } else {
-           echo "<div class='form'>
-           <h3>Username/password is incorrect.</h3>
-           <br/>Click here to <a href='login.php'>Login</a></div>";
+            $smsg="username/passowrd incorrect";
+           echo "<div class='form'>";
+           
         }
  }
  
@@ -50,6 +52,7 @@ if (isset($_POST['submit'])){
                         <ul class="breadcrumb">
                             <li><a href="#">Home</a></li>
                             <li class="active">Login Page</li>
+
                         </ul>
                     </div><!-- end columns -->
                 </div><!-- end row -->
@@ -68,15 +71,20 @@ if (isset($_POST['submit'])){
                                 <div class="custom-form custom-form-fields">
                                     <h3>Login</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <?php if(isset($smsg)){?>
+                                          <div class="alert alert-danger" role="alert">
+                                            usrname/password invorrect
+                                        </div>
+                                    <?php } ?>
                                     <form method="post">
                                             
                                         <div class="form-group">
-                                             <input name="username" type="text" class="form-control" placeholder="Username"  required/>
+                                             <input name="uname" type="text" class="form-control" placeholder="Username"  required/>
                                              <span><i class="fa fa-user"></i></span>
                                         </div>
                                         
                                         <div class="form-group">
-                                             <input name="password" type="password" class="form-control" placeholder="Password"  required/>
+                                             <input name="pwd" type="password" class="form-control" placeholder="Password"  required/>
                                              <span><i class="fa fa-lock"></i></span>
                                         </div>
                                         
