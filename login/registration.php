@@ -17,8 +17,8 @@ if(isset($_POST['register']))
     }
     else
     {
-        $query ="INSERT INTO user (uname,uaddress,gender,contact,email,pwd) VALUES ('$uname','$add','$gender','$contact','$email','$pwd')";
-        $result=mysqli_query($con,$query);
+        $query = "INSERT INTO user (uname,uaddress,gender,contact,email,pwd) VALUES ('$uname','$add','$gender','$contact','$email','$pwd')";
+        $result = mysqli_query($con, $query);
         if($result){
             $smsg="You have registered successfully";
             echo"<script> window.setTimeout(function(){
