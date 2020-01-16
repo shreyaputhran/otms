@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
         if($rows2>=1){
                 $_SESSION['auname']=$getinfo['auname'];
                 $_SESSION['aid']=$getinfo['aid'];
-                echo "<scrpit> window.location= '../admin/index.php'; </script>";
+                echo "<script> window.location= '../admin/index.php'; </script>";
                 //echo "<script>window.alert('you are logged in as admin');</script>";
         } else {
             $smsg="username/passowrd incorrect";

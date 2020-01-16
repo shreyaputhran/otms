@@ -17,12 +17,12 @@ if(isset($_POST['register']))
     }
     else
     {
-        $query = "INSERT INTO user (uname,uaddress,gender,contact,email,pwd) VALUES ('$uname','$add','$gender','$contact','$email','$pwd')";
+        $query = "INSERT INTO `user` (uname,uaddress,gender,contact,email,pwd) VALUES ('$uname','$add','$gender','$contact','$email','$pwd')";
         $result = mysqli_query($con, $query);
         if($result){
             $smsg="You have registered successfully";
             echo"<script> window.setTimeout(function(){
-                window.location.href='login.php';
+                window.location.href='index.php';
             },3000);</script>";
         }
         else{
@@ -395,7 +395,7 @@ if(isset($_POST['register']))
                         	<div class="flex-content">
                                 <div class="custom-form custom-form-fields">
                                     <h3>Registration</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>please register for better experience.</p>
                                     <form method="POST">
                                             
                                         <div class="form-group">
@@ -436,7 +436,7 @@ if(isset($_POST['register']))
                                     </form>
                                     
                                     <div class="other-links">
-                                    	<p class="link-line">Already Have An Account ? <a href="login.php">Login Here</a></p>
+                                    	<p class="link-line">Already Have An Account ? <a href="index.php">Login Here</a></p>
                                     </div><!-- end other-links -->
                                 </div><!-- end custom-form -->
                                 

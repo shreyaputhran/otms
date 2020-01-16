@@ -5,14 +5,14 @@
         <meta content="Themesbrand" name="author" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="../plugins/images/favicon.ico">
 
         <!--Morris Chart CSS -->
-        <link rel="stylesheet" href="assets/plugins/morris/morris.css">
-        <link href="assets/plugins/metro/MetroJs.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="../plugins/plugins/morris/morris.css">
+        <link href="../plugins/plugins/metro/MetroJs.min.css" rel="stylesheet" >
 
         <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/style.css" rel="stylesheet" type="text/css" />

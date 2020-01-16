@@ -1,3 +1,7 @@
+<?php
+ include '../access/accesscontroladmin.php';
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -565,6 +569,7 @@
                     
                 </div><!-- container -->
                  <?php include 'pages/footer.php'; ?>
+                 </div>
             <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
