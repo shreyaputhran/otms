@@ -27,8 +27,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div id="info">
                             <ul class="list-unstyled list-inline">
-                                <li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
-                                <li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
+                                <li><span><i class="fa fa-map-marker"></i></span>ground floor vishnu kripa buliding</li>
+                                <li><span><i class="fa fa-phone"></i></span>+91-9535649099</li>
                             </ul>
                         </div><!-- end info -->
                     </div><!-- end columns -->
@@ -36,32 +36,14 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div id="links">
                             <ul class="list-unstyled list-inline">
-                                <li><a href="login/"><span><i class="fa fa-lock"></i></span>Login</a></li>
+                                <li><a href="../index.php"><span><i class="fa fa-lock"></i></span>Login</a></li>
                                 <li><a href="login/registration.php"><span><i class="fa fa-plus"></i></span>Sign Up</a></li>
                                 <li>
                                 	<form>
                                     	<ul class="list-inline">
-                                        	<li>
-                                                <div class="form-group currency">
-                                                    <span><i class="fa fa-angle-down"></i></span>
-                                                    <select class="form-control">
-                                                        <option value="">$</option>
-                                                        <option value="">£</option>
-                                                    </select>
-                                                </div><!-- end form-group -->
-											</li>
+                                        	
                                             
-                                            <li>
-                                                <div class="form-group language">
-                                                    <span><i class="fa fa-angle-down"></i></span>
-                                                    <select class="form-control">
-                                                        <option value="">EN</option>
-                                                        <option value="">UR</option>
-                                                        <option value="">FR</option>
-                                                        <option value="">IT</option>
-                                                    </select>
-                                                </div><!-- end form-group -->
-                                            </li>
+                                            
 										</ul>
                                     </form>
                                 </li>
@@ -92,7 +74,6 @@
                             <ul class="dropdown-menu">
                                 <li><a href="index.html">Main Homepage</a></li>
                                 <li><a href="flight-homepage.html">Flight Homepage</a></li>
-                                <li><a href="hotel-homepage.html">Hotel Homepage</a></li>
                                 <li><a href="tour-homepage.html">Tour Homepage</a></li>
                                 <li><a href="cruise-homepage.html">Cruise Homepage</a></li>
                                 <li><a href="car-homepage.html">Car Homepage</a></li>
@@ -110,17 +91,7 @@
                                 <li><a href="flight-detail-right-sidebar.html">Detail Right Sidebar</a></li>
                             </ul>			
                         </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Hotels<span><i class="fa fa-angle-down"></i></span></a>
-                            <ul class="dropdown-menu">
-                            	<li><a href="hotel-homepage.html">Hotel Homepage</a></li>
-                                <li><a href="hotel-listing-left-sidebar.html">List View Left Sidebar</a></li>
-                                <li><a href="hotel-listing-right-sidebar.html">List View Right Sidebar</a></li>
-                                <li><a href="hotel-grid-left-sidebar.html">Grid View Left Sidebar</a></li>
-                                <li><a href="hotel-grid-right-sidebar.html">Grid View Right Sidebar</a></li>
-                                <li><a href="hotel-detail-left-sidebar.html">Detail Left Sidebar</a></li>
-                                <li><a href="hotel-detail-right-sidebar.html">Detail Right Sidebar</a></li>
-                            </ul>			
-                        </li>
+                        
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tours<span><i class="fa fa-angle-down"></i></span></a>
                             <ul class="dropdown-menu">
                             	<li><a href="tour-homepage.html">Tour Homepage</a></li>
@@ -184,7 +155,7 @@
                                         <div class="col-md-3">
                                             <ul class="list-unstyled">
                                                 <li class="dropdown-header">Special <span>Pages</span></li>
-                                                <li class="active"><a href="login/">Login</a></li>
+                                                <li class="active"><a href="login/index.php">Login</a></li>
                                                 <li><a href="login/registration.php">Registration</a></li>
                                                 <li><a href="forgot-password.html">Forgot Password</a></li>
                                                 <li><a href="error-page.html">404 Page</a></li>
@@ -213,7 +184,7 @@
         
         <div class="sidenav-content">
             <div id="mySidenav" class="sidenav" >
-                <h2 id="web-name"><span><i class="fa fa-plane"></i></span>Star Travel</h2>
+                <h2 id="web-name"><span><i class="fa fa-plane"></i></span>V2 travels</h2>
 
                 <div id="main-menu">
                 	<div class="closebtn">
@@ -226,7 +197,7 @@
                         <div class="collapse sub-menu" id="home-links">
                             <a href="index.html" class="list-group-item">Main Homepage</a>
                             <a href="flight-homepage.html" class="list-group-item">Flight Homepage</a>
-                            <a href="hotel-homepage.html" class="list-group-item">Hotel Homepage</a>
+                            
                             <a href="tour-homepage.html" class="list-group-item">Tour Homepage</a>
                             <a href="cruise-homepage.html" class="list-group-item">Cruise Homepage</a>
                             <a href="car-homepage.html" class="list-group-item">Car Homepage</a>
@@ -244,16 +215,7 @@
                             <a href="flight-detail-right-sidebar.html" class="list-group-item">Detail Right Sidebar</a>
                         </div><!-- end sub-menu -->
                         
-                        <a href="#hotels-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-building link-icon"></i></span>Hotels<span><i class="fa fa-chevron-down arrow"></i></span></a>
-                        <div class="collapse sub-menu" id="hotels-links">
-                            <a href="hotel-homepage.html" class="list-group-item">Hotel Homepage</a>
-                            <a href="hotel-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
-                            <a href="hotel-listing-right-sidebar.html" class="list-group-item">List View Right Sidebar</a>
-                            <a href="hotel-grid-left-sidebar.html" class="list-group-item">Grid View Left Sidebar</a>
-                            <a href="hotel-grid-right-sidebar.html" class="list-group-item">Grid View Right Sidebar</a>
-                            <a href="hotel-detail-left-sidebar.html" class="list-group-item">Detail Left Sidebar</a>
-                            <a href="hotel-detail-right-sidebar.html" class="list-group-item">Detail Right Sidebar</a>
-                        </div><!-- end sub-menu -->
+                        
                         
                         <a href="#tours-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-globe link-icon"></i></span>Tours<span><i class="fa fa-chevron-down arrow"></i></span></a>
 

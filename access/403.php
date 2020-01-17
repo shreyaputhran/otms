@@ -8,13 +8,13 @@
         <meta content="Themesbrand" name="author" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="../plugins/images/favicon.ico">
 
         <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/css/style.css" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -27,10 +27,10 @@
             <div class="topbar-left">
                 <a href="index.html" class="logo">
                     <span>
-                        <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        <img src="../plugins/images/logo-sm.png" alt="logo-small" class="logo-sm">
                     </span>
                     <span>
-                        <img src="assets/images/logo.png" alt="logo-large" class="logo-lg">
+                        <img src="../plugins/images/logo.png" alt="logo-large" class="logo-lg">
                     </span>
                 </a>
             </div>

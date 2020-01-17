@@ -7,9 +7,9 @@
                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
                             <h3 class="footer-heading">CONTACT US</h3>
                             <ul class="list-unstyled">
-                            	<li><span><i class="fa fa-map-marker"></i></span>29 Land St, Lorem City, CA</li>
-                            	<li><span><i class="fa fa-phone"></i></span>+00 123 4567</li>
-                                <li><span><i class="fa fa-envelope"></i></span>info@starhotel.com</li>
+                            	<li><span><i class="fa fa-map-marker"></i></span>ground floor vishnu kripa  buliding</li>
+                            	<li><span><i class="fa fa-phone"></i></span>+91-9535649099</li>
+                                <li><span><i class="fa fa-envelope"></i></span>www.v2travels.com</li>
                             </ul>
                         </div><!-- end columns -->
                         
@@ -30,15 +30,15 @@
                             <ul class="list-unstyled">
                             	<li><a href="#">Blogs</a></li>
                             	<li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Register</a></li>
+                                <li><a href="../index.php">Login</a></li>
+                                <li><a href="../registeration.php">Register</a></li>
                                 <li><a href="#">Site Map</a></li>
                             </ul>
                         </div><!-- end columns -->
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-about">
                             <h3 class="footer-heading">ABOUT US</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                            <p>V2 tours and travle was inaguranted on  XXX.With the vision to provide good hospitality  and one stop solution to all you travel needs.We provide quality services for all type of budget travelers .Our drivers are very professional with good knowledge of major routes in india.</p>
                             <ul class="social-links list-inline list-unstyled">
                             	<li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
                             	<li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
@@ -58,7 +58,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
-                            <p>© 2017 <a href="#">StarTravel</a>. All rights reserved.</p>
+                            <p>© 2017 <a href="#">V2 travels</a>. All rights reserved.</p>
                         </div><!-- end columns -->
                         
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">

@@ -70,7 +70,7 @@ if (isset($_POST['submit'])){
                         	<div class="flex-content">
                                 <div class="custom-form custom-form-fields">
                                     <h3>Login</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Please login for better expeirnce with best price grantuee.</p>
                                     <?php if(isset($smsg)){?>
                                           <div class="alert alert-danger" role="alert">
                                             usrname/password invorrect

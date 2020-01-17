@@ -16,3 +16,16 @@
         <link rel="stylesheet" href="lander-plugins/css/style.css">
         <link rel="stylesheet" id="cpswitch" href="lander-plugins/css/orange.css">
         <link rel="stylesheet" href="lander-plugins/css/responsive.css">
+         
+         <!-- Owl Carousel Stylesheet -->
+         <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        
+        <!-- Flex Slider Stylesheet -->
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+        
+        <!--Date-Picker Stylesheet-->
+        <link rel="stylesheet" href="css/datepicker.css">
+        
+        <!-- Magnific Gallery -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
