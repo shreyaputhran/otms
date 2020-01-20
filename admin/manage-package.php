@@ -4,17 +4,42 @@ if(isset($_POST['apply']))
 {
     $tname=$_POST['tname'];
     $tprice=$_POST['tprice'];
-    $query="INSERT into `tours` (tname,tprice) VALUES ('$tname',$tprice')";
+    $tdesp=$_POST['tdesp'];
+    $tgst=$_POST['tgst'];
+
+    $query="INSERT into `tours` (tname,tprice,tdesp,tgst) VALUES ('$tname',$tprice','$tdesp','$tgst')";
     $result=mysqli_query($con,$query);
     if($result)
     {
-        $smsg="your tour has been applied successfully";
+        $smsg="your package has been applied successfully";
 
     }
     else{
         $smsg=mysqli_error($con);
     }
 }
+if(isset($_GET['tid'])) {
+    $editid=$_GET['tid'];
+    $getquery=mysqli_query($con,"SELECT * FROM tours WHERE tid='$editid'");
+    $editdata=mysqli_fetch_assoc($getquery);
+}
+if(isset($_POST['update']))
+{
+    $tname=$_POST['tname'];
+    $tprice=$_POST['tprice'];
+    $tdesp=$_POST['tdesp'];
+    $tgst=$_POST['tgst'];
+
+    $query="UPDATE  tours  SET tname='$tname',tprice='$tprice',tdesp='$tdesp',tgst='$tgst' WHERE tid=$editid'";
+    $result=mysqli_query($con,$query);
+    if($result)
+    {
+        $smsg="your package has been updated successfully";
+
+    }
+    else{
+        $smsg=mysqli_error($con);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +100,12 @@ if(isset($_POST['apply']))
                                             </div> 
                                             <div class="col-sm-12 col-lg-6">
                                                 <input  name="tprice" class="form-control" type="text" id="price" placeholder="Price">
+                                            </div> 
+                                            <div class="col-sm-12 col-lg-6  mo-b-15">
+                                                <input name="tdesp" class="form-control" type="text" id="desp" placeholder="Description">                                                       
+                                            </div> 
+                                            <div class="col-sm-12 col-lg-6">
+                                                <input  name="tgst" class="form-control" type="text" id="gst" placeholder="GST">
                                             </div>                                                   
                                         </div>
                                         
