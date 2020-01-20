@@ -1,5 +1,5 @@
 <?php 
-include '../access/db.php';
+include '../access/accesscontroladmin.php';
 if(isset($_POST['apply']))
 {
     $tname=$_POST['tname'];
@@ -99,7 +99,7 @@ if(isset($_POST['update']))
                                             <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>name="tname" class="form-control" type="text" id="tname" placeholder=" Enter the Name">                                                       
                                             </div> 
                                             <div class="col-sm-12 col-lg-6">
-                                                <input<?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>  name="tprice" class="form-control" type="text" id="tprice" placeholder="Price">
+                                                <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>  name="tprice" class="form-control" type="text" id="tprice" placeholder="Price">
                                             </div> 
                                             <div class="col-sm-12 col-lg-6  mo-b-15">
                                                 <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?> name="tdesp" class="form-control" type="text" id="tdesp" placeholder="Description">                                                       
@@ -108,36 +108,27 @@ if(isset($_POST['update']))
                                                 <input  <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>name="tgst" class="form-control" type="text" id="gst" placeholder="GST">
                                             </div>                                                   
                                         </div>
+                                        <?php if (isset($editid)) { ?>
+                                            <button name="Update" type="submit" class="btn btn-primary px-4">UPDATE</button>
+                                        <?php } else { ?>
+                                            <button name="Apply" type="submit" class="btn btn-primary px-4">Apply</button>
+                                            <?php } ?>  
                                         
-                                        <div class="form-group row">
-                                            <div class="col-sm-12">
-                                                <input class="form-control" type="text" id="subject2" placeholder="Subject">                                                       
-                                            </div>                                                    
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your message"></textarea>
-                                        </div>                                                
-                                        <div class="custom-control custom-radio my-2">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
-                                            <label class="custom-control-label" for="customRadio1">Male</label>
-                                        </div>
-                                        <div class="custom-control custom-radio my-2">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Female</label>
-                                        </div>
-                                        <button name="apply" type="submit" class="btn btn-primary px-4">Apply</button>
+                                        
+                                                                                        
+                                        
+                                       
                                     </form>
                                 </div>
                             </div>
                         </div>
 
                         
-                        
+                    </div>    
 
                 </div><!-- container -->
 
-                <?php include 'pages/footer.php';
-                ?>
+                <?php include 'pages/footer.php';?>
             </div>
             <!-- end page content -->
         </div>
@@ -145,9 +136,8 @@ if(isset($_POST['update']))
 
 
         <!-- jQuery  -->
-        <?php include 'pages/jslink.php';
-        ?>
+        <?php include 'pages/jslink.php'; ?>
+       
 
-
-    </body>
+</body>
 </html>

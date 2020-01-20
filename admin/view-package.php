@@ -1,5 +1,5 @@
 <?php
-include '../access/db.php';
+include '../access/accesscontroladmin.php';
 $getquery =mysqli_query($con,"SELECT * FROM tours");
 if(isset($_POST['del']))
 {
