@@ -38,7 +38,7 @@
                                             <div class="error-content text-center">
                                                 <h1 class="">403!</h1>
                                                 <h3 class="text-primary">you do not permission to access this page</h3><br>
-                                                <a class="btn btn-primary mb-5 waves-effect waves-light" href="login/index.php">Back to login</a>
+                                                <a class="btn btn-primary mb-5 waves-effect waves-light" href="../login/index.php">Back to login</a>
                                             </div>
                                         </div>
                                     </div>

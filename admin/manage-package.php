@@ -1,6 +1,6 @@
 <?php 
 include '../access/accesscontroladmin.php';
-if(isset($_POST['apply']))
+if(isset($_POST['submit']))
 {
     $tname=$_POST['tname'];
     $tprice=$_POST['tprice'];
@@ -111,7 +111,7 @@ if(isset($_POST['update']))
                                         <?php if (isset($editid)) { ?>
                                             <button name="Update" type="submit" class="btn btn-primary px-4">UPDATE</button>
                                         <?php } else { ?>
-                                            <button name="Apply" type="submit" class="btn btn-primary px-4">Apply</button>
+                                            <button name="submit" type="submit" class="btn btn-primary px-4">Submit</button>
                                             <?php } ?>  
                                         
                                         
