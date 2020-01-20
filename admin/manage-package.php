@@ -96,16 +96,16 @@ if(isset($_POST['update']))
                                     <form method="POST">
                                         <div class="form-group row">
                                             <div class="col-sm-12 col-lg-6  mo-b-15">
-                                                <input name="tname" class="form-control" type="text" id="name" placeholder="Name">                                                       
+                                            <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>name="tname" class="form-control" type="text" id="tname" placeholder=" Enter the Name">                                                       
                                             </div> 
                                             <div class="col-sm-12 col-lg-6">
-                                                <input  name="tprice" class="form-control" type="text" id="price" placeholder="Price">
+                                                <input<?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>  name="tprice" class="form-control" type="text" id="tprice" placeholder="Price">
                                             </div> 
                                             <div class="col-sm-12 col-lg-6  mo-b-15">
-                                                <input name="tdesp" class="form-control" type="text" id="desp" placeholder="Description">                                                       
+                                                <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?> name="tdesp" class="form-control" type="text" id="tdesp" placeholder="Description">                                                       
                                             </div> 
                                             <div class="col-sm-12 col-lg-6">
-                                                <input  name="tgst" class="form-control" type="text" id="gst" placeholder="GST">
+                                                <input  <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>name="tgst" class="form-control" type="text" id="gst" placeholder="GST">
                                             </div>                                                   
                                         </div>
                                         
