@@ -1,4 +1,4 @@
-<div class="topbar">
+x<div class="topbar">
 
             <!-- LOGO -->
             <div class="topbar-left">
@@ -109,7 +109,7 @@
                             <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
                             <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                            <a class="dropdown-item" href="../login/logout.php"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
                         </div>
                     </li>
                 </ul>
