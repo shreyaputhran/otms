@@ -5,6 +5,6 @@ session_destroy();
 session_unset();
 
 // Redirecting To Home Page
-header("Location:index.php");
+header("Location:login/index.php");
 
 ?>

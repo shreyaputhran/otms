@@ -1,5 +1,5 @@
 <?php
-include '../access/accesscontroladmin.php';
+include '../access/db.php';
 // If form submitted, insert values into the database.
 if (isset($_POST['submit'])) {
     $uname = $_POST['uname'];
@@ -60,6 +60,7 @@ if (isset($_POST['update'])) {
     }
 } else {
     $smsg = mysqli_error($con);
+}
 }
 
 ?>

@@ -96,7 +96,7 @@ if (isset($_POST['submit'])){
                                     </form>
                                     
                                     <div class="other-links">
-                                    	<p class="link-line">New Here ? <a href="registration.php">Signup</a></p>
+                                    	<p class="link-line">New Here ? <a href="login/registration.php">Signup</a></p>
                                         <a class="simple-link" href="#">Forgot Password ?</a>
                                     </div><!-- end other-links -->
                                 </div><!-- end custom-form -->

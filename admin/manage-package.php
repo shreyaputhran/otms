@@ -1,5 +1,5 @@
 <?php 
-include '../access/accesscontroladmin.php';
+include '../access/db.php';
 if(isset($_POST['submit']))
 {
     $tname=$_POST['tname'];
@@ -40,6 +40,7 @@ if(isset($_POST['update']))
     else{
         $smsg=mysqli_error($con);
     }
+}
 ?>
 
 <!DOCTYPE html>
