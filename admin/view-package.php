@@ -1,6 +1,7 @@
 <?php
 include '../access/accesscontroladmin.php';
-$getquery =mysqli_query($con,"SELECT * FROM tours");
+include '../access/db.php';
+$getquery = mysqli_query($con,"SELECT * FROM tours");
 if(isset($_POST['del']))
 {
     $deltid=$_POST['deltid'];

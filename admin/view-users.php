@@ -1,5 +1,6 @@
 <?php
     include '../access/accesscontroladmin.php';
+    include '../access/db.php';
     $getquery = mysqli_query($con, "SELECT * FROM user INNER JOIN user_packages");
     if(isset($_POST['del']))
     {

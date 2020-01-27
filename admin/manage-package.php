@@ -7,7 +7,7 @@ if(isset($_POST['submit']))
     $tdesp=$_POST['tdesp'];
     $tgst=$_POST['tgst'];
 
-    $query="INSERT into `tours` (tname,tprice,tdesp,tgst) VALUES ('$tname',$tprice','$tdesp','$tgst')";
+    $query="INSERT into `tours` (tname,tprice,tdesp,tgst) VALUES ('$tname','$tprice','$tdesp','$tgst')";
     $result=mysqli_query($con,$query);
     if($result)
     {
