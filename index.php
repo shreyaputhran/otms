@@ -7,6 +7,7 @@ include("auth.php");
 <html lang="en">
     <head>
         <title>Index</title>
+        <base href="../">
         <?php include 'pages/csslink.php';
         ?>
     </head>
