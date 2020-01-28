@@ -18,14 +18,14 @@
         <link rel="stylesheet" href="lander-plugins/css/responsive.css">
          
          <!-- Owl Carousel Stylesheet -->
-         <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
+         <link rel="stylesheet" href="lander-plugins/css/owl.carousel.css">
+        <link rel="stylesheet" href="lander-plugins/css/owl.theme.css">
         
         <!-- Flex Slider Stylesheet -->
-        <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+        <link rel="stylesheet" href="lander-plugins/css/flexslider.css" type="text/css" />
         
         <!--Date-Picker Stylesheet-->
-        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="lander-plugins/css/datepicker.css">
         
         <!-- Magnific Gallery -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="lander-plugins/css/magnific-popup.css">
