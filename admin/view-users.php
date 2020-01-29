@@ -1,27 +1,19 @@
 <?php
     include '../access/accesscontroladmin.php';
     include '../access/db.php';
-    $getquery = mysqli_query($con, "SELECT * FROM user INNER JOIN user_packages");
+    $getquery = mysqli_query($con, "SELECT * FROM user INNER JOIN user_packages ON user.uid=user_package.uid");
     if(isset($_POST['del']))
     {
-    $delpid = $_POST['delpid'];
-    $delquery = mysqli_query($con,"DELETE FROM user WHERE uid='$delpid'");
+    $deluid = $_POST['deluid'];
+    $delquery = mysqli_query($con,"DELETE FROM user-package WHERE uid='$deluid'");
     if($delquery)
     {
-        $getquery = mysqli_query($con, "SELECT * FROM user");
+        $delquery = mysqli_query($con, "DELETE FROM user WHERE uid='$deluid'");
+        $getquery = mysqli_query($con,"SELECT * FROM user JOIN user_package ON user.uid=user_package.uid");
         echo "<script>window.alert('data deleted');</script>";
     }
 }
-if(isset($_POST['del']))
-{
-$delpid = $_POST['delpid'];
-$delquery = mysqli_query($con,"DELETE FROM tours WHERE tid='$delpid'");
-if($delquery1)
-{
-    $getquery1 = mysqli_query($con, "SELECT * FROM plans");
-    echo "<script>window.alert('data deleted');</script>";
-}
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

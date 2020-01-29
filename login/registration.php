@@ -591,9 +591,9 @@ if(isset($_POST['register']))
         
         
         <!-- Page Scripts Starts -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/custom-navigation.js"></script>
+       <?php include '../pages/jslink.php';
+       ?>
+       
         <!-- Page Scripts Ends -->
     </body>
 </html>

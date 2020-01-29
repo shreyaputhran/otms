@@ -18,6 +18,13 @@
                             <li><a href="view-package.php">View packages</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="javascript: void(0);"><i class="mdi mdi-format-list-bulleted-type"></i><span>Taxi Management</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="manage-cars.php">Manage cars</a></li>
+                            <li><a href="view-cars.php">View cars</a></li>
+                        </ul>
+                    </li>
 
 
                     <li>
