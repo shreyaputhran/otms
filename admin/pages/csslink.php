@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-        <title>Amezia - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>V2 Tours and travel- Admin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A premium admin dashboard template by themesbrand" name="description" />
         <meta content="Themesbrand" name="author" />

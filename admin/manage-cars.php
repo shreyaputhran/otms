@@ -1,13 +1,16 @@
 <?php 
+include '../access/accesscontroladmin';
 include '../access/db.php';
 if(isset($_POST['submit']))
 {
-    $tname=$_POST['tname'];
-    $tprice=$_POST['tprice'];
-    $tdesp=$_POST['tdesp'];
-    $tgst=$_POST['tgst'];
+    $txname=$_POST['txname'];
+    $txfrom=$_POST['txfrom'];
+    $txto=$_POST['txto'];
+    $txdate=$_POST['txdate'];
+    $txtime=$_POST['txprice'];
+    $txprice=$_POST['txprice'];
 
-    $query="INSERT into `tours` (tname,tprice,tdesp,tgst) VALUES ('$tname','$tprice','$tdesp','$tgst')";
+    $query="INSERT into `taxis` ('txname','txfrom','txto','txdate','txtime',txprice) VALUES ()";
     $result=mysqli_query($con,$query);
     if($result)
     {

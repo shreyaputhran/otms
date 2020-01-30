@@ -8,7 +8,7 @@ include("auth.php");
     <head>
         <title>Index</title>
         <base href="../">
-        <?php include 'pages/csslink.php';
+        <?php include 'pages/csslink.php'; 
         ?>
     </head>
     
@@ -1211,13 +1211,13 @@ include("auth.php");
         
         
         <!--======================= FOOTER =======================-->
-        <?php include 'pages/footer.php';
+        <?php include '../pages/footer.php';
         ?>
         <!-- end footer -->
         
         
         <!-- Page Scripts Starts -->
-       <?php include 'pages/jslink.php';
+       <?php include '../pages/jslink.php';
        ?>
         <!-- Page Scripts Ends -->
         
