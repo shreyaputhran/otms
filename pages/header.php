@@ -196,23 +196,20 @@
                         <a href="#home-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Home<span><i class="fa fa-chevron-down arrow"></i></span></a>
                         <div class="collapse sub-menu" id="home-links">
                             <a href="index.html" class="list-group-item">Main Homepage</a>
-                            <a href="flight-homepage.html" class="list-group-item">Flight Homepage</a>
+                            <a href="flight-homepage.html" class="list-group-item">taxi Booking</a>
                             
-                            <a href="tour-homepage.html" class="list-group-item">Tour Homepage</a>
-                            <a href="cruise-homepage.html" class="list-group-item">Cruise Homepage</a>
-                            <a href="car-homepage.html" class="list-group-item">Car Homepage</a>
+                            <a href="tour-homepage.html" class="list-group-item">tour Booking</a>
+                            <a href="cruise-homepage.html" class="list-group-item">ticket Booking</a>
+                            <a href="car-homepage.html" class="list-group-item">notifications</a>
                             <a href="landing-page.html" class="list-group-item">Landing Page</a>
                         </div><!-- end sub-menu -->
                         
                         <a href="#flights-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-plane link-icon"></i></span>Flights<span><i class="fa fa-chevron-down arrow"></i></span></a>
                         <div class="collapse sub-menu" id="flights-links">
                             <a href="flight-homepage.html" class="list-group-item">Flight Homepage</a>
-                            <a href="flight-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
-                            <a href="flight-listing-right-sidebar.html" class="list-group-item">List View Right Sidebar</a>
-                            <a href="flight-grid-left-sidebar.html" class="list-group-item">Grid View Left Sidebar</a>
-                            <a href="flight-grid-right-sidebar.html" class="list-group-item">Grid View Right Sidebar</a>
-                            <a href="flight-detail-left-sidebar.html" class="list-group-item">Detail Left Sidebar</a>
-                            <a href="flight-detail-right-sidebar.html" class="list-group-item">Detail Right Sidebar</a>
+                            <a href="flight-listing-left-sidebar.html" class="list-group-item">domestic</a>
+                            <a href="flight-listing-right-sidebar.html" class="list-group-item">internatinal</a>
+                           
                         </div><!-- end sub-menu -->
                         
                         
@@ -222,34 +219,25 @@
 
                         <div class="collapse sub-menu" id="tours-links">
                             <a href="tour-homepage.html" class="list-group-item">Tour Homepage</a>
-                            <a href="tour-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
-                            <a href="tour-listing-right-sidebar.html" class="list-group-item">List View Right Sidebar</a>
-                            <a href="tour-grid-left-sidebar.html" class="list-group-item">Grid View Left Sidebar</a>
-                            <a href="tour-grid-right-sidebar.html" class="list-group-item">Grid View Right Sidebar</a>
-                            <a href="tour-detail-left-sidebar.html" class="list-group-item">Detail Left Sidebar</a>
-                            <a href="tour-detail-right-sidebar.html" class="list-group-item">Detail Right Sidebar</a>
+                            <a href="tour-listing-left-sidebar.html" class="list-group-item">Holidays</a>
+                            <a href="tour-listing-right-sidebar.html" class="list-group-item">temples</a>
+                            <a href="tour-grid-left-sidebar.html" class="list-group-item">beaches</a>
+                            <a href="tour-grid-right-sidebar.html" class="list-group-item">honeymoon</a>
+                            <a href="tour-detail-left-sidebar.html" class="list-group-item">resorts</a>
                         </div><!-- end sub-menu -->
                         
                         <a href="#cruise-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-ship link-icon"></i></span>Cruise<span><i class="fa fa-chevron-down arrow"></i></span></a>
                         <div class="collapse sub-menu" id="cruise-links">
-                            <a href="cruise-homepage.html" class="list-group-item">Cruise Homepage</a>
-                            <a href="cruise-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
-                            <a href="cruise-listing-right-sidebar.html" class="list-group-item">List View Right Sidebar</a>
-                            <a href="cruise-grid-left-sidebar.html" class="list-group-item">Grid View Left Sidebar</a>
-                            <a href="cruise-grid-right-sidebar.html" class="list-group-item">Grid View Right Sidebar</a>
-                            <a href="cruise-detail-left-sidebar.html" class="list-group-item">Detail Left Sidebar</a>
-                            <a href="cruise-detail-right-sidebar.html" class="list-group-item">Detail Right Sidebar</a>
+                            <a href="cruise-homepage.html" class="list-group-item">Taxi Homepage</a>
+                            <a href="cruise-listing-left-sidebar.html" class="list-group-item">drop and pick up</a>
+                            <a href="cruise-listing-right-sidebar.html" class="list-group-item">within city</a>
                         </div><!-- end sub-menu -->
                         
                         <a href="#cars-links" class="list-group-item" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-car link-icon"></i></span>Cars<span><i class="fa fa-chevron-down arrow"></i></span></a>
                         <div class="collapse sub-menu" id="cars-links">
-                            <a href="car-homepage.html" class="list-group-item">Car Homepage</a>
-                            <a href="car-listing-left-sidebar.html" class="list-group-item">List View Left Sidebar</a>
-                            <a href="car-listing-right-sidebar.html" class="list-group-item">List View Right Sidebar</a>
-                            <a href="car-grid-left-sidebar.html" class="list-group-item">Grid View Left Sidebar</a>
-                            <a href="car-grid-right-sidebar.html" class="list-group-item">Grid View Right Sidebar</a>
-                            <a href="car-detail-left-sidebar.html" class="list-group-item">Detail Left Sidebar</a>
-                            <a href="car-detail-right-sidebar.html" class="list-group-item">Detail Right Sidebar</a>
+                            <a href="car-homepage.html" class="list-group-item">ticket Homepage</a>
+                            <a href="car-listing-left-sidebar.html" class="list-group-item">flight </a>
+                            <a href="car-listing-right-sidebar.html" class="list-group-item">bus</a>
                         </div><!-- end sub-menu -->
                         
                         <a href="#pages-links" class="list-group-item active" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-clone link-icon"></i></span>Pages<span><i class="fa fa-chevron-down arrow"></i></span></a>

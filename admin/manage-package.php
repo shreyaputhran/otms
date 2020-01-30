@@ -1,4 +1,5 @@
 <?php 
+include '../access/accesscontroladmin.php';
 include '../access/db.php';
 if(isset($_POST['submit']))
 {

@@ -10,30 +10,31 @@ if(isset($_POST['submit']))
     $txtime=$_POST['txprice'];
     $txprice=$_POST['txprice'];
 
-    $query="INSERT into `taxis` ('txname','txfrom','txto','txdate','txtime',txprice) VALUES ()";
+    $query="INSERT into `taxis` ('txname','txfrom','txto','txdate','txtime','txprice') VALUES ($txname,$txfrom,$txto,$txdate,$txtime,$txprice)";
     $result=mysqli_query($con,$query);
     if($result)
     {
-        $smsg="your package has been applied successfully";
+        $smsg="your taxi plan  has been applied successfully";
 
     }
     else{
         $smsg=mysqli_error($con);
     }
 }
-if(isset($_GET['tid'])) {
-    $editid=$_GET['tid'];
-    $getquery=mysqli_query($con,"SELECT * FROM tours WHERE tid='$editid'");
+if(isset($_GET['taxiid'])) {
+    $editid=$_GET['taxiid'];
+    $getquery=mysqli_query($con,"SELECT * FROM taxis WHERE taxiid='$editaxiid'");
     $editdata=mysqli_fetch_assoc($getquery);
 }
 if(isset($_POST['update']))
 {
-    $tname=$_POST['tname'];
-    $tprice=$_POST['tprice'];
-    $tdesp=$_POST['tdesp'];
-    $tgst=$_POST['tgst'];
-
-    $query="UPDATE  tours  SET tname='$tname',tprice='$tprice',tdesp='$tdesp',tgst='$tgst' WHERE tid=$editid'";
+    $txname=$_POST['txname'];
+    $txfrom=$_POST['txfrom'];
+    $txto=$_POST['txto'];
+    $txdate=$_POST['txdate'];
+    $txtime=$_POST['txprice'];
+    $txprice=$_POST['txprice'];
+    $query="UPDATE  taxis  SET txname='$txname', txfrom='$txfrom', txto='$txto',txdate='$txdate',txtime='$txtime',txprice='$txprice'  WHERE taxiid=$editaxiid'";
     $result=mysqli_query($con,$query);
     if($result)
     {
@@ -78,11 +79,11 @@ if(isset($_POST['update']))
                                 <div class="float-right">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="javascript:void(0);">V2 </a></li>
-                                        <li class="breadcrumb-item"><a href="javascript:void(0);">add packages</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">add taxi</a></li>
                                         
                                     </ol>
                                 </div>
-                                <h4 class="page-title">ADD PACKAGES</h4>
+                                <h4 class="page-title">ADD TAXI</h4>
                             </div>
                         </div>
                     </div>
@@ -100,19 +101,25 @@ if(isset($_POST['update']))
                                     <form method="POST">
                                         <div class="form-group row">
                                             <div class="col-sm-12 col-lg-6  mo-b-15">
-                                            <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>name="tname" class="form-control" type="text" id="tname" placeholder=" Enter the Name">                                                       
+                                            <input <?php if (isset($editaxiid)) { ?> value="<?php echo $editdata['txname'];?>"<?php } ?>name="txname" class="form-control" type="text" id="txname" placeholder=" Enter the Name">                                                       
                                             </div> 
                                             <div class="col-sm-12 col-lg-6">
-                                                <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>  name="tprice" class="form-control" type="text" id="tprice" placeholder="Price">
+                                                <input <?php if (isset($editaxiid)) { ?> value="<?php echo $editdata['txfrom'];?>"<?php } ?>  name="txfrom" class="form-control" type="text" id="tfrom" placeholder="PICK UP">
                                             </div> 
                                             <div class="col-sm-12 col-lg-6  mo-b-15">
-                                                <input <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?> name="tdesp" class="form-control" type="text" id="tdesp" placeholder="Description">                                                       
+                                                <input <?php if (isset($editaxiid)) { ?> value="<?php echo $editdata['txto'];?>"<?php } ?> name="txfrom" class="form-control" type="text" id="txto" placeholder="DROP ME">                                                       
                                             </div> 
                                             <div class="col-sm-12 col-lg-6">
-                                                <input  <?php if (isset($editid)) { ?> value="<?php echo $editdata['tname'];?>"<?php } ?>name="tgst" class="form-control" type="text" id="gst" placeholder="GST">
+                                                <input  <?php if (isset($editaxiid)) { ?> value="<?php echo $editdata['txdate'];?>"<?php } ?>name="txdate" class="form-control" type="text" id="txdate" placeholder="DATE">
+                                            </div> 
+                                            <div class="col-sm-12 col-lg-6">
+                                                <input  <?php if (isset($editaxiid)) { ?> value="<?php echo $editdata['txtime'];?>"<?php } ?>name="txtime" class="form-control" type="text" id="txtime" placeholder="TIME">
+                                            </div> 
+                                            <div class="col-sm-12 col-lg-6">
+                                                <input  <?php if (isset($editaxiid)) { ?> value="<?php echo $editdata['txprice'];?>"<?php } ?>name="txprice" class="form-control" type="text" id="txprice" placeholder="PRICE">
                                             </div>                                                   
                                         </div>
-                                        <?php if (isset($editid)) { ?>
+                                        <?php if (isset($editaxiid)) { ?>
                                             <button name="Update" type="submit" class="btn btn-primary px-4">UPDATE</button>
                                         <?php } else { ?>
                                             <button name="submit" type="submit" class="btn btn-primary px-4">Submit</button>

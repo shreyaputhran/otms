@@ -7,7 +7,7 @@ include("auth.php");
 <html lang="en">
     <head>
         <title>Index</title>
-        <base href="../">
+        <!--<base href="../">-->
         <?php include 'pages/csslink.php'; 
         ?>
     </head>
@@ -63,7 +63,7 @@ include("auth.php");
                                 <li class="active"><a href="#flights" data-toggle="tab"><span><i class="fa fa-plane"></i></span><span class="st-text">Flights</span></a></li>
                                <!-- <li><a href="#hotels" data-toggle="tab"><span><i class="fa fa-building"></i></span><span class="st-text">Hotels</span></a></li>-->
                                 <li><a href="#tours" data-toggle="tab"><span><i class="fa fa-suitcase"></i></span><span class="st-text">Tours</span></a></li>
-                                <li><a href="#cruise" data-toggle="tab"><span><i class="fa fa-ship"></i></span><span class="st-text">Cruise</span></a></li>
+                                <!--<li><a href="#c" data-toggle="tab"><span><i class="fa fa-ship"></i></span><span class="st-text">Cruise</span></a></li>-->
                                 <li><a href="#cars" data-toggle="tab"><span><i class="fa fa-car"></i></span><span class="st-text">Cars</span></a></li>
                             </ul>
         
@@ -1211,13 +1211,13 @@ include("auth.php");
         
         
         <!--======================= FOOTER =======================-->
-        <?php include '../pages/footer.php';
+        <?php include 'pages/footer.php';
         ?>
         <!-- end footer -->
         
         
         <!-- Page Scripts Starts -->
-       <?php include '../pages/jslink.php';
+       <?php include 'pages/jslink.php';
        ?>
         <!-- Page Scripts Ends -->
         
